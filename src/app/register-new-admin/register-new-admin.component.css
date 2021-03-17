@@ -1,0 +1,21 @@
+
+.bg{
+    background-color: darkgoldenrod;
+}
+.card{    
+    /* text-align:center; */
+    margin: top 10px; ;
+    margin-left: 600px;
+    margin-bottom:10px; 
+   
+}
+div {
+    font-size:large;
+}
+
+.button
+{
+    margin-left: 500px;
+    width: 100%;
+}
+

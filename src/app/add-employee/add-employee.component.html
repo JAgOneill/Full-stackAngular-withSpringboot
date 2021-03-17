@@ -1,0 +1,76 @@
+
+<blockquote class="blockquote text-center">
+    <h2><span style="color: blue;">Add Employee Data  </span></h2>
+<button (click)="OnHome()" class="btn btn-primary">
+    HOME
+    </button>
+</blockquote>
+<!--lets create a form here to store the Employee data and later send it -->
+<div class="col-md-6 offset-mid-3">
+<form (ngSubmit)="OnSubmit()">
+<!--create this OnSubmit() in its repsective ts file -->
+<div class="form-group">
+   
+    <label>Name:</label>
+<input type="text" class="form-control" id="name" [(ngModel)]="employee1.name"   name="name">
+<!-- <div class="alert alert-danger" ></div> -->
+
+</div>
+
+<div class="form-group">
+    <label>PhoneNo:</label>
+<input type="text" class="form-control" id="phoneno" [(ngModel)]="employee1.phoneno" name="phoneno">
+</div>
+
+<div class="form-group">
+    <label>Department:</label>
+<input type="text" class="form-control" id="departmentit" [(ngModel)]="employee1.departmentit" name="departmentit">
+</div>
+
+<div class="form-group">
+    <label>Status:</label>
+<input type="text" class="form-control" id="status" [(ngModel)]="employee1.status" name="status">
+</div>
+
+
+<!-- <div class="form-group">
+    <label>CreatedDate:</label>
+<input type="datetime" class="form-control" id="createddtm" [(ngModel)]="employee1.createddtm" name="createddtm">
+</div> -->
+
+<!-- <div class="form-group">
+    <label>CreatedBy:</label>
+<input type="text" class="form-control" id="createdby" [(ngModel)]="employee1.createdby" name="createdby">
+</div> -->
+
+<!-- <div class="form-group">
+    <label>Updated date</label>
+<input type="datetime" class="form-control" id="updateddtm" [(ngModel)]="employee1.updateddtm" name="updateddtm">
+</div> -->
+
+<!-- <div class="form-group">
+    <label>UpdatedBy</label>
+<input type="text" class="form-control" id="updatedby" [(ngModel)]="employee1.updatedby" name="updatedby">
+</div> -->
+
+<!-- <div class="form-group">
+    <label>Country Id</label>
+<input type="text" class="form-control" id="cid" [(ngModel)]="employee1.country.cid" name="cid">
+</div>
+
+<div class="form-group">
+    <label>Country</label>
+<input type="text" class="form-control" id="cname" [(ngModel)]="employee1.country.cname" name="cname">
+</div> -->
+<label for="">Select Country:&nbsp;&nbsp; </label>
+<select [(ngModel)]="selectvalue" (change)="changecountry()" name="cname">
+    <!-- <option [ngValue]="undefined" disabled>Select Country</option> -->
+    <option *ngFor="let item of country2;index as i"[ngValue]="item">{{item.cname}}</option>
+</select><br><br>
+
+
+<button class="btn btn-success" type="submit" >Submit</button>
+
+
+</form>
+</div>

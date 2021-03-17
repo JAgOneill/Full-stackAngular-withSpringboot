@@ -1,0 +1,38 @@
+<div class="bg">
+<div class="container-fluid" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <app-header></app-header>
+    <div  class="row">
+       
+
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="center">
+                <ng-template #popUp>
+                    <app-update-employee [parentdata]="empobj" ></app-update-employee>
+                    <button (click)="modalRef.hide()" class="btn btn-danger">Close</button>
+                </ng-template>
+            <div class="card bg-warning text-white" style="width: 800px;">
+                <button routerLink="/home" class="btn btn-danger"><i class="fa fa-home">Home</i></button>
+                <div class="card-body  text-center">
+                   
+                    <div class="card-title"><div class="heading1"><h3>  Details Of {{empobj.name}} </h3>
+                    </div>
+                        <div class="card-text">
+                            <br>
+                            <div class="heading">
+                            <h4>Full Name <br>{{empobj.name}} </h4><br>
+                            <h4>Phone No <br>{{empobj.phoneno}} </h4>    <br>
+                            <h4>Department<br>{{empobj.departmentit}} </h4>    <br>
+                            <h4>Work Status<br>{{empobj.status}} </h4>    <br>
+                            <h4>Country <br>{{empobj.country.cname}} </h4>    <br>
+                            <button class="btn btn-primary" (click)="OnUpdate(popUp)">Update</button>
+                        </div>
+                        </div>
+                        </div>   
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>

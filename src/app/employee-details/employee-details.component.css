@@ -1,0 +1,22 @@
+.center {
+    /* border: 5px solid #FFFF00; */
+    display: flex;
+    justify-content: center;
+    }
+    button{
+        padding: 10px;
+        font-size: large;
+        color: black;
+        background-color:darkorange;
+    }
+    .heading:hover {
+        color: black;
+        
+        text-decoration: underline  gray;
+        text-transform:uppercase;
+        }
+
+        .heading1:hover {
+            color:black;
+            
+            }

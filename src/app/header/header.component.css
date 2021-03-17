@@ -1,0 +1,8 @@
+.navbar {
+    min-height: 110px;
+    color: black;
+  }
+
+  .navbar-custom { 
+    background-color:black; 
+} 
