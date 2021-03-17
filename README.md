@@ -1,6 +1,7 @@
 # Projectfrontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29. 
+Along with <b>Java</b> (JDK 1.8) <b>(Springboot)</b>,<b>(RESTFul WebService)</b>
 
 ## Development server
 
