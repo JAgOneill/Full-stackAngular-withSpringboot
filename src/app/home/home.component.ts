@@ -17,7 +17,7 @@ import { ToastrService  } from 'ngx-toastr';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-// lets create a property which will hold a repsonse of REST API
+// lets create a property which will hold a repsonse of REST API.
 private updateurl='http://localhost:8081/api/updateemployee';
 employee:Employee[];
 item2:any;
@@ -65,7 +65,8 @@ employee1={id:0,
     this.getAllemployee();
   
     }
-  
+  // getAllEmployee gets all data using fat arrow function
+
 getAllemployee()
 {
   this.employeeservice.getEmployee().subscribe((data:Employee[])=>
